@@ -6,6 +6,8 @@ class Program {
         return answer;
     }
 
+    struct newstruct { int num1; int num2; int num3; }
+
     void main() {
         int mymod;
         int myvar;

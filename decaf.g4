@@ -1,10 +1,9 @@
 grammar decaf;
 
-
+WHITE  : (' ' | '\n' | '\r') -> skip ;
 ID     : (('a'..'z') | ('A'..'Z')) ((('a'..'z') | ('A'..'Z')) | ('0'..'9'))* ;
 NUM    : ('0'..'9') ('0'..'9')* ;
 CHAR   : ('a'..'z') | ('A'..'Z') ;
-WHITE  : (' ' | '\n' | '\r') -> skip ;
 
 program           : 'class' 'Program' '{' (declaration)* '}' ;
 declaration       : structDeclaration 
