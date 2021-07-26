@@ -1,7 +1,7 @@
 # Laboratorio 00
 
 ### Construcción de compiladores - Sección 10
-### María Fernanda Estrada 14198
+### María Fernanda Estrada 14198  
 
 #### Para generar scanner y parser:
 antlr4 decaf.g4  
