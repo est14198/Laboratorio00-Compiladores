@@ -3,6 +3,8 @@
 ### Construcción de Compiladores - Sección 10
 ### María Fernanda Estrada 14198  
 
+#### ---------------------------------
+
 #### Para generar scanner y parser:
 antlr4 decaf.g4  
 javac decaf*.java
