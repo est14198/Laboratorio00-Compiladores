@@ -1,6 +1,6 @@
 # Laboratorio 00
 
-### Construcción de compiladores - Sección 10
+### Construcción de Compiladores - Sección 10
 ### María Fernanda Estrada 14198  
 
 #### Para generar scanner y parser:
