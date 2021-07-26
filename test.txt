@@ -1,0 +1,18 @@
+class Program {
+
+    int mod(int num, int modnum) {
+        int answer;
+        answer = num % modnum;
+        return answer;
+    }
+
+    void main() {
+        int mymod;
+        int myvar;
+        mymod = mod(60, 17);
+        if (mymod < 4) {
+            myvar = myvar + mymod;
+        }
+    }
+
+}
