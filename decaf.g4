@@ -9,7 +9,7 @@ program           : 'class' 'Program' '{' (declaration)* '}' ;
 declaration       : structDeclaration 
                     | varDeclaration 
                     | methodDeclaration ;
-structDeclaration :  'struct' ID '{' (varDeclaration)* '}' ;
+structDeclaration :  'struct' ID '{' (varDeclaration)* '}' ';' ;
 varDeclaration    : varType ID ';' 
                     | varType ID '[' NUM ']' ';' ;
 varType           : 'int' 
@@ -18,7 +18,7 @@ varType           : 'int'
                     | 'struct' ID 
                     | structDeclaration 
                     | 'void' ;
-methodDeclaration : methodType ID '(' (parameter (',' parameter)*)? ')' block ;
+methodDeclaration : methodType ID '(' ((parameter (',' parameter)*)? | 'void') ')' block ;
 methodType        : 'int' 
                     | 'char' 
                     | 'boolean' 
